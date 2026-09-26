@@ -17,5 +17,4 @@ public record EnvironmentalLicenseCreateRequest(
 
         @NotNull(message = "Expiration date is required")
         LocalDateTime expirationDate
-
 ) {}

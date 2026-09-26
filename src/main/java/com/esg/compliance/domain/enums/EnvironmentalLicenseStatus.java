@@ -1,10 +1,9 @@
 package com.esg.compliance.domain.enums;
 
 public enum EnvironmentalLicenseStatus {
-    ACTIVE,
-    EXPIRED,
     VALID,
-    RENEWAL_REQUIRED;
+    EXPIRING_SOON,
+    EXPIRED;
 
     public static EnvironmentalLicenseStatus fromString(String value) {
         if(value == null || value.isBlank()) {
