@@ -28,7 +28,7 @@ jobs:
       - name: Compilar e Executar Testes
         run: mvn test -Dspring.profiles.active=test
         env:
-          JWT_SECRET: "minhaChaveSecretaDeTesteSuperSeguraComMaisDe32Caracteres12345"
+          JWT_SECRET: "test-secret-key-minimum-32-characters-long-for-hmac-sha256"
           ORACLE_USER: "test_user"
           ORACLE_PASSWORD: "test_pass"
 
