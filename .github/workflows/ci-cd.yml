@@ -26,7 +26,7 @@ jobs:
           cache: maven
 
       - name: Compilar e Executar Testes
-        run: mvn test -Dspring.flyway.enabled=false -Dspring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+        run: mvn test -Dspring.profiles.active=test
 
       - name: Empacotar Aplicação (.jar)
         run: mvn package -DskipTests

@@ -1,0 +1,51 @@
+# =========================================
+# MAVEN & BUILD (Target)
+# =========================================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Log files
+*.log
+
+# =========================================
+# ENVIROMENT & SECRETS (Segurança)
+# =========================================
+.env
+!.env.example
+
+# =========================================
+# IDEs & EDITORS
+# =========================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# VS Code
+.vscode/
+
+# macOS / OS X
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================================
+# DOCKER & LOCAL DATA
+# =========================================
+*.dockerdata/
