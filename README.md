@@ -193,6 +193,30 @@ security → autenticação e autorização
 
 ---
 
+#### Prints do funcionamento
+
+Abaixo estão apresentadas as evidências de execução do ciclo de vida da aplicação e a automação de CI/CD utilizando o GitHub Actions e o Docker Hub:
+
+##### 1. Pipeline CI/CD Completo (Build, Test, Push e Deploys)
+Execução do workflow no GitHub Actions exibindo os 4 jobs integrados e executados com sucesso:
+![Pipeline CI/CD Completo](./images/pipeline_completo.png)
+
+##### 2. Compilação e Execução de Testes Automatizados (Maven)
+Logs do job `Build & Test` detalhando a execução do `mvn test` e empacotamento do artefato `.jar` sem falhas:
+![Logs de Build e Testes](./images/compilar.png)
+![Logs de Build e Testes](./images/empacotar.png)
+
+##### 3. Containerização e Publicação no Docker Hub
+Imagem Docker da aplicação (`compliance-api`) construída e publicada automaticamente com as tags `latest` e o SHA do commit:
+![Imagem no Docker Hub](./images/docker_hub.png)
+
+##### 4. Deploy Automatizado nos Ambientes de Staging e Produção
+Logs comprovando o acionamento e o deploy contínuo nos ambientes segregados de Staging e Produção:
+![Deploy Staging](./images/deploy_staging.png)
+![Deploy Produção](./images/deploy_production.png)
+
+---
+
 ## 📌 Boas práticas aplicadas
 
 * Uso de DTOs com records
